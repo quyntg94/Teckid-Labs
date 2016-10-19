@@ -13,11 +13,8 @@ post2 = {
     "content" : "Today, i met a boy. He has black eyes and loves ice-cream"
 }
 
-print(post1("title"))
-print(post1("content"))
-
-print(post2("title"))
-print(post2("content"))
+print(post1["title"])
+print(post1["content"])
 
 @app.route('/')
 def hello_world():
@@ -25,4 +22,4 @@ def hello_world():
 
 if __name__=='__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=1607)
+    app.run(host='0.0.0.0', port=3000)
